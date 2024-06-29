@@ -26,6 +26,8 @@ tags:
     description: Operations about workflows
   - name: Credential
     description: Operations about credentials
+  - name: Installed Nodes
+    description: Operations about installed nodes
   - name: Tags
     description: Operations about tags
   - name: SourceControl
@@ -40,6 +42,8 @@ paths:
     $ref: './handlers/credentials/spec/paths/credentials.id.yml'
   /credentials/schema/{credentialTypeName}:
     $ref: './handlers/credentials/spec/paths/credentials.schema.id.yml'
+  /installed-nodes:
+    $ref: './handlers/installedNodes/spec/paths/installedNodes.yml'
   /executions:
     $ref: './handlers/executions/spec/paths/executions.yml'
   /executions/{id}:

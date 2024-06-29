@@ -54,6 +54,19 @@ export declare namespace TagRequest {
 	type Update = AuthenticatedRequest<{ id: string }, {}, TagEntity>;
 }
 
+export declare namespace InstalledNodeRequest {
+	type GetAll = AuthenticatedRequest<
+		{},
+		{},
+		{},
+		{
+			limit?: number;
+			cursor?: string;
+			offset?: number;
+		}
+	>;
+}
+
 export declare namespace CredentialTypeRequest {
 	type Get = AuthenticatedRequest<{ credentialTypeName: string }, {}, {}, {}>;
 }

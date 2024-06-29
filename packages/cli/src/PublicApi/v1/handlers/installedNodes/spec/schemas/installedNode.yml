@@ -1,0 +1,12 @@
+type: object
+properties:
+  className:
+    type: string
+    example: n8n-nodes-base.actionNetwork
+  displayName:
+    type: string
+    example: Action Network
+  description:
+    type: string
+    example: Consume the Action Network API
+  
