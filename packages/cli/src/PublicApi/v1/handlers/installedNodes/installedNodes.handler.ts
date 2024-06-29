@@ -18,6 +18,7 @@ export = {
 			const knownNodeTypes = nodeTypes.getKnownTypes()
 			const knownNodeTypesClassNames = Object.keys(knownNodeTypes)
 			const rangeKnownNodeTypesClassNames = knownNodeTypesClassNames.slice(offset, offset + limit)
+			
 			for (let knownNodeTypeClassName of rangeKnownNodeTypesClassNames) {
 				let nodeTypeInfo = nodeTypes.getByName(knownNodeTypeClassName)
 				results.push({
