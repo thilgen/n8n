@@ -9,4 +9,3 @@ properties:
   description:
     type: string
     example: Consume the Action Network API
-  
